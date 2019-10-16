@@ -27,7 +27,7 @@ class BMI {
         else if(this.BMI>=25 && this.BMI<=29.9)
             return 'You are Overweight';
         else    
-            return 'You are Obese';
+            return 'You are The Best';
     }
 }
 // export {BMI};
