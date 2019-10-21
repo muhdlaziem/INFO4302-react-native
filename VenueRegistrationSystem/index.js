@@ -102,13 +102,14 @@ function bookVenue(booked,start,end){
     let organization = readline.question('\t\t\t\t\tEnter your organization: ')
     let venueid = readline.question('\t\t\t\t\tEnter VenueID you want to book: ');
     // console.log(booked.includes();
-    while(booked.includes(parseInt(venueid))){
+    while(booked.includes(parseInt(venueid) && !venueid)){
         console.log(`\n\t\t\t\t\tThis venue has been booked: ${venueid}.`)
         venueid = readline.question('\t\t\t\t\tPlease enter an available venue you want to book: ');
     }
-
+    let bookingID = random();
+    storeBookID.push(bookingID);
     book.push(new Book(
-        random(),
+        bookingID,
         parseInt( matricno),
         organization,
         parseInt(venueid),
@@ -137,7 +138,7 @@ function init(){
             book[i].venueid,
             book[i].start,
             book[i].end,);
-        storeBookID.push(book[i].venueid);
+        storeBookID.push(book[i].bookid);
     }
          
 }
