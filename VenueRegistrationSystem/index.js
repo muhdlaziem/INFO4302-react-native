@@ -36,7 +36,7 @@ function getTimeDate(){
     let mergeEnd = `${date} ${end}`;
 
     // console.log(new Date(mergeStart).getHours(),new Date(mergeEnd).getHours())
-    while(!(new Date(mergeStart).getHours()>=8 && new Date(mergeEnd).getHours()<=17)){
+    while(!(new Date(mergeStart).getHours()>=8 && new Date(mergeEnd).getHours()<=23)){
         console.log('\t\t\t\t\tThis period is not available.\n');
         date = readline.question("\t\t\t\t\tOn what date ?(Format: MM-DD-YYYY): " )
         start = readline.question("\t\t\t\t\tStart From?(H:mm (24-Hours)): ");
