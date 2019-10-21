@@ -16,14 +16,12 @@ let storeVenueID=[];
 
 // let hour, minute, day, month;
 function title(){
-
     console.log(`\n\n\t\t\t\t\t============================================\n\n          \t\t\t\t\tVenue Reservation System`);
     console.log(`\n\t\t\t\t\t============================================`);
 
 }
 
 function menu(){
-
    console.log('\n          \t\t\t\t\t1.Book Venue\n          \t\t\t\t\t2.History\n          \t\t\t\t\t3.Exit\n');
 }
 
@@ -151,7 +149,6 @@ function init(){
          
 }
 function titlehistory(){
-
     console.log('\n\n\t\t\t\t\t====================================\n\n          \t\t\t\t\tBooking History');
     console.log('\n\t\t\t\t\t====================================\n');
 
