@@ -115,15 +115,8 @@ function bookVenue(booked,start,end){
         start,
         end
     ));
-    let jsonstring=JSON.stringify(book);
 
-    let a=fs.writeFile('./book.json', jsonstring, err => {
-        if (err) {
-            console.log('\t\t\t\t\t\tError writing file', err)
-        } else {
-            console.log('\t\t\t\t\t\tSuccessfully wrote file')
-        }
-    })
+    
 
     // console.log(book);
     return true;
@@ -175,7 +168,7 @@ function showHistory(){
 function random() {
     let random = parseInt(Math.random() * (30 - 0) + 0);
     while(storeBookID.includes(random))
-        random = parseInt(Math.random() * (999 - 0) + 0);
+        random = parseInt(Math.random() * (30 - 0) + 0);
     return random;
   }
 
@@ -195,7 +188,16 @@ function play(){
                 console.log('\t\t\t\t\tBook succeded!');
             sleep.sleep(2);break;
             case 2 : clear();titlehistory();let hist = showHistory();break;
-            case 3 : clear();title();console.log("\n      \t\t\t\t\t\tExit Program\n\n");break;
+            case 3 : clear();title();console.log("\n      \t\t\t\t\t\tExit Program\n\n");
+            let jsonstring=JSON.stringify(book);
+
+            let a=fs.writeFile('./book.json', jsonstring, err => {
+                if (err) {
+                    console.log('\t\t\t\t\t\tError writing file', err)
+                } else {
+                    console.log('\t\t\t\t\t\tSuccessfully wrote file')
+                }
+            });break;
             default : clear();title();menu();console.log("          \t\t\t\t\t\tWrong input ! Try again\n");
         }
 
