@@ -102,7 +102,7 @@ function bookVenue(booked,start,end){
     // console.log(booked);
     let matricno = readline.question('\n\t\t\t\t\tEnter your matric card: ');
     let organization = readline.question('\t\t\t\t\tEnter your organization: ')
-    let venueid = readline.question('\t\t\t\t\tEnter venueid you want to book: ');
+    let venueid = readline.question('\t\t\t\t\tEnter VenueID you want to book: ');
     // console.log(booked.includes();
     while(booked.includes(parseInt(venueid))){
         console.log(`\n\t\t\t\t\tThis venue has been booked: ${venueid}.`)
