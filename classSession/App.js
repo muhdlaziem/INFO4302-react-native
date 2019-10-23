@@ -33,14 +33,14 @@ export default class App extends Component{
 
         <Button onPress={()=>{
           this.updateYear(); 
-          }} title='PRESS LAAAA' />
+          }} title='Change Year' />
 
         <Text>{this.state.year}</Text>
         <Text></Text>
         <Text></Text>
         <Text></Text>
 
-        <Button onPress={this.updateName} title='AD'/>
+        <Button onPress={this.updateName} title='Change Name'/>
 
         <Text>Hai</Text>
         <Text></Text>
