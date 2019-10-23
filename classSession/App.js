@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
+import {BookDisplay} from './myLib/BookDisplay';
 // import {readline} from 'readline';
 
 
@@ -10,18 +11,24 @@ export default class App extends Component{
       year: 2019,
       name: 'Laziem',
       subject: ['nlp','mad'],
+      book: 'One Piece'
       // Search: () => function(){}   do not use fucntion in object
     }
 
   }
-  updateYear(){
-    this.setState({year:2020});
+  updateYear(x){
+    this.setState({year:x});
     alert('You clicked this')
 
   }
   updateName = ()=> {
     this.setState({name:'yusuf'});
     alert('You clicked this')
+
+  }
+  updateBook = ()=> {
+    this.setState({book:'Fire Force'});
+    // alert('You clicked this')
 
   }
   render(){
@@ -32,8 +39,8 @@ export default class App extends Component{
         <Text>{this.state.name}</Text>
 
         <Button onPress={()=>{
-          this.updateYear(); 
-          }} title='Change Year' />
+          this.updateYear(12345); 
+          }} title='Change Year' color='black'/>
 
         <Text>{this.state.year}</Text>
         <Text></Text>
@@ -53,6 +60,14 @@ export default class App extends Component{
           alert('You tapped the button!');
         }}
         title="Press Me"/>
+        <Text></Text>
+        <Text></Text>
+        <Text></Text>
+        <Button onPress={this.updateBook} title='Change Book'/>
+        <Text></Text>
+        <Text></Text>
+        <Text></Text>
+        <BookDisplay updateBook={()=> this.updateBook()} book= {this.state.book}/>
         
       </View>
       
@@ -68,6 +83,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#e08283',
   }
 });
+
+
 
 
 //can use multiple view (Nested View)
