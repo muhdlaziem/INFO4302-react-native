@@ -44,14 +44,33 @@ class componentName extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Image source={{uri:'https://facebook.github.io/react/logo-og.png'}} style={{width: 40, height: 40}}/>
-                <Image source = {require('./images/fitness-color-16-512.png')} style ={{width:100,height:100}} />
-                <Text style = {{fontSize:30, fontWeight: 'bold'}} >BMI Calculator</Text>
-                <TextInput style ={styles.textinput} onChangeText = {(weight) => this.setState({weight})}
+                <Image
+                source={{uri:'https://facebook.github.io/react/logo-og.png'}} 
+                style={{width: 40, height: 40}}/>
+
+                <Image
+                 source = {require('./images/fitness-color-16-512.png')} 
+                 style ={{width:100,height:100}} />
+
+                <Text 
+                style = {{fontSize:30, fontWeight: 'bold'}} 
+                >BMI Calculator</Text>
+
+                <TextInput 
+                style ={styles.textinput} 
+                onChangeText = {(weight) => this.setState({weight})}
                 placeholder = 'Weight in KG'/>
-                <TextInput style ={styles.textinput} onChangeText = {(height) => this.setState({height})}
+
+                <TextInput 
+                style ={styles.textinput} 
+                onChangeText = {(height) => this.setState({height})}
                 placeholder = 'Height in CM'/>
-                <Button style = {{fontSize:30}} color = '#841584' onPress = {this.calculateBMI} title = 'Calculate'/>
+
+                <Button 
+                style = {{fontSize:30}} 
+                color = '#841584' 
+                onPress = {this.calculateBMI} 
+                title = 'Calculate'/>
                 <Text></Text>
                 <Text></Text>
 
