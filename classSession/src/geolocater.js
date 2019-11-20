@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
 
-export default class App extends Component {
+export default class geolocater extends Component {
   constructor() {
     super();
 

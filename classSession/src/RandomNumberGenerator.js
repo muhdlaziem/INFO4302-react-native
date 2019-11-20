@@ -7,7 +7,7 @@ import {
 
 } from "react-native";
 
-class componentName extends Component {
+class RandomNumberGenerator extends Component {
     constructor(){
         super();
         this.state = {
@@ -35,7 +35,7 @@ class componentName extends Component {
         );
     }
 }
-export default componentName;
+export default RandomNumberGenerator;
 
 const styles = StyleSheet.create({
     container: {

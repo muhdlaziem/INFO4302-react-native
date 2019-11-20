@@ -10,7 +10,7 @@ import {
 // import {Button} from 'react-native-elements';
 
 
-class componentName extends Component {
+class BMICalculator extends Component {
     constructor(){
         super();
         this.state = {
@@ -57,7 +57,7 @@ class componentName extends Component {
         );
     }
 }
-export default componentName;
+export default BMICalculator;
 
 const styles = StyleSheet.create({
     container: {
