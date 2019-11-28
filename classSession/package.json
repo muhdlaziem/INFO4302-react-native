@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@react-native-community/geolocation": "^2.0.2",
+    "firebase": "^7.5.0",
+    "native-base": "^2.13.8",
     "react": "16.9.0",
     "react-native": "0.61.4",
     "react-native-elements": "^1.2.7",
@@ -21,6 +23,7 @@
     "react-native-screens": "^2.0.0-alpha.11",
     "react-native-vector-icons": "^6.6.0",
     "react-navigation": "^4.0.10",
+    "react-navigation-material-bottom-tabs": "^2.1.5",
     "react-navigation-stack": "^1.10.3"
   },
   "devDependencies": {
